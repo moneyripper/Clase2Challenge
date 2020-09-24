@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 tags HTML más utilizados</title>
+    <style>
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color:#5500FF;
+    text-align: center;
+}
+h2 {
+    color:#050038;
+}
+
+p {
+    font-family:Rubik, sans-serif;
+    font-size: 18px;
+}
+ul {
+    font-family:Rubik, sans-serif;
+    font-size: 18px;
+}
+
+pre {
+    font-family:monospace;
+    font-size: 16px;
+    color:rgb(40, 241, 0);
+    background-color: rgb(31, 30, 30);
+    background-size:cover
+}
+
+ol { 
+    font-family:Rubik, sans-serif;
+    font-size: 18px;
+}
+
+    </style>
+</head>
+
+<body style="background-color:white ;">
+
+<h1>10 tags HTML más utilizados</h1>
+<ol>
+<li><a href="#uno">&#60;html&#62;...&#60;/html&#62; El elemento raíz</a></li>
+<li><a href="#dos">&#60;head&#62;...&#60;/head&#62; El encabezado del documento</a></li>
+<li><a href="#tres">&#60;title&#62;… &#60;/title&#62; El título de la página</a></li>
+<li><a href="#cuatro">&#60;body&#62;...&#60;/body&#62; El contenido de la página</a></li>
+<li><a href="#cinco">&#60;h1&#62;...&#60;/h1&#62; Un título de sección</a></li>
+<li><a href="#seis">&#60;p&#62;...&#60;/p&#62; Un párrafo</a></li>
+<li><a href="#siete">&#60;a&#62;...&#60;/a&#62; Un enlace</a></li>
+<li><a href="#ocho">&#60;img&#62; Una imagen</a></li>
+<li><a href="#nueve">&#60;div&#62;...&#60;/div&#62; Un contenedor de contenido a nivel de bloque</a></li>
+<li><a href="#diez">&#60;span&#62;...&#60;/span&#62;Un contenedor en línea para contenido</a></li>
+
+</ol>
+
+<h2 id="uno">1. &#60;html&#62;...&#60;/html&#62; El elemento raíz</h2>
+
+<p>Todas las páginas web comienzan con el elemento <b>html</b>. También se llama elemento raíz porque está en la raíz del árbol de elementos que componen una página web.
+Para crear el elemento <b>html</b>, escribe una etiqueta de apertura &#60;html&#62; seguida de una etiqueta de cierre &#60;/html&#62;. Todo lo demás en su página web va entre estas 2 etiquetas:
+</p>
+
+<pre>
+
+    &#60;html&#62;
+        (Todos los otros elementos)
+    &#60;/html&#62;
+
+</pre>
+
+<h2 id="dos" >2. &#60;head&#62;...&#60;/head&#62; El encabezado del documento</h2>
+
+<p>El elemento <b>head</b> contiene información sobre la página web, a diferencia del contenido de la página web en sí. Hay muchos elementos que puedes poner dentro del elemento <b>head</b>, como por ejemplo:</p>
+
+<ul>
+<li><b>title</b>,título de la pestaña.</li> 
+<li><b>link</b>, que puede usar para agregar hojas de estilo y favicons a su página.</li>
+<li><b>meta</b>, para especificar elementos como conjuntos de caracteres, descripciones de páginas y palabras clave para motores de búsqueda.</li>
+<li><b>script</b>, para agregar código JavaScript a la página.</li>
+</ul>
+
+<p>Aquí hay un elemento <b>head</b> típico :</p>
+
+<pre>
+
+    &#60;head&#62;
+        &#60;title&#62;10 Tags HTML más utilizados&#60;/title&#62;
+        &#60;meta charset="UTF-8"&#62;
+        &#60;meta name="description" content="10 tags mas usados en el lenguaje HTML"&#62;
+        &#60;meta name="keywords" content="html,web,paginas"&#62;
+        &#60;link rel="stylesheet" type="text/css" href="/style.css"&#62;
+        &#60;link rel="shortcut icon" href="/favicon.ico"&#62;
+    &#60;/head&#62;
+
+</pre>
+
+<h2 id="tres">3. &#60;title&#62;… &#60;/title&#62; El título de la página</h2>
+<p>El elemento <b>title</b> contiene el título de la página. El título se muestra en la pestaña del navegador (la barra en la parte superior de la ventana del navegador), así como en los marcadores, los resultados del motor de búsqueda y muchos otros lugares.</p>
+
+<p>El título debe describir el contenido de la página de manera sucinta y precisa. Intente darle a cada página de su sitio un título único.</p>
+    
+<p>He aquí un ejemplo:</p>
+
+<pre>  
+    &#60;title&#62;10 Tags HTML más utilizados&#60;/title&#62; 
+
+</pre>
+
+<h2 id="cuatro">4. &#60;body&#62;...&#60;/body&#62; El contenido de la página</h2>
+
+<p>El elemento <b>body</b> aparece después del elemento <b>head</b> en la página. Debe contener todo el contenido de su página web: texto, imágenes, etc.
+    Todas las páginas web tienen un solo elemento <b>body</b>, con la excepción de las páginas de conjuntos de marcos, que contienen elementos <b>frame</b> en su lugar.
+</p>
+
+<p>Aquí está el formato general del elemento <b>body</b>:</p>
+
+<pre>
+    &#60;body&#62;
+        (Todo el contenido de la pagina va aquí)
+    &#60;/body&#62;    
+</pre>
+
+<h2 id="cinco">5. &#60;h1&#62;...&#60;/h1&#62; Un título de sección</h2>
+
+<p>Los encabezados le permiten dividir el contenido de su página en partes legibles. Funcionan de forma muy similar a los títulos y subtítulos de un libro o un informe.</p>
+
+<p>HTML en realidad es compatible con 6 elementos epígrafe: h1, h2, h3, h4, h5, y h6. h1es para los encabezados más importantes, h2es para los subtítulos menos importantes y así sucesivamente. 
+    Normalmente no será necesario utilizar más de h1, h2y h3, a menos que su página sea muy larga y compleja.
+</p>
+
+<p>A continuación, se muestra un ejemplo de un <b>h1</b> elemento de título:</p>
+
+<pre>
+    
+    &#60;h1&#62;10 tags HTML más utilizados&#60;/h1&#62;  
+
+</pre>
+
+<h2 id="seis">6. &#60;p&#62;...&#60;/p&#62; Un párrafo</h2>
+
+<P>El elemento <b>p</b> le permite crear párrafos de texto. La mayoría de los navegadores muestran párrafos con un espacio vertical entre cada párrafo, dividiendo muy bien el texto.</P>
+
+<p>Si bien puede crear "párrafos" de texto simplemente usando <b>&#60;br&#62;</b> etiquetas para insertar líneas en blanco entre fragmentos de texto, es mejor usar <b>p</b> elementos en su lugar. No solo es más ordenado, sino que les da a los navegadores, motores de búsqueda y otros no humanos una mejor idea de cómo está estructurada su página.</p>
+
+<p>Aquí hay un ejemplo de un párrafo:</p>
+
+<pre>
+   
+    &#60;p&#62;Esto es un texto de ejemplo&#60;/p&#62;
+
+</pre>
+
+
+<p>Una buena regla general al escribir texto para la web es asegurarse de que cada párrafo contenga un solo punto, tema o pensamiento. Si quieres hablar de 2 cosas diferentes, usa 2 párrafos.</p>
+
+<h2 id="siete">7. &#60;a&#62;...&#60;/a&#62; Un enlace</h2>
+
+<p>Uno de los elementos más importantes de una página web, el elemento <b>a</b> le permite crear enlaces a otro contenido. El contenido puede estar en su propio sitio o en otro sitio.</p>
+
+<p>Para crear un enlace, envuelve con <b>&#60;a&#62; &#60;/a&#62;</b> etiquetas alrededor del contenido que deseas usar para el enlace y proporciona la URL a la que deseas enlazar en el atributo de la <b>&#60;a&#62;</b>etiqueta <b>href</b>.</p>
+
+<p>A continuación, se explica cómo crear un texto que se vincule a www.example.com:</p>
+
+<pre>
+
+    &#60;a href="http://www.example.com/"&#62;Visita esta pagina web de ejemplo!&#60;/a&#62;
+
+</pre>
+<a href="http://www.example.com/" target="blanck" style="font-size: large;color: red;">Visita esta pagina web de ejemplo!</a>
+
+<h2 id="ocho" >8.&#60;img&#62; Una imagen</h2>
+
+<p>El elemento <b>img</b> le permite insertar imágenes en sus páginas web. Para insertar una imagen, primero cargue la imagen en su servidor web, luego use una &#60;img&#62;etiqueta para hacer referencia al nombre de archivo de la imagen cargada.</p>
+
+<p>He aquí un ejemplo:</p>
+
+<pre>
+    
+    &#60;img src="myphoto.jpg" alt="My Photo"&#62; 
+
+</pre>
+
+<p>El <b>alt</b> atributo es obligatorio para todas las <b>img</b> etiquetas. Es utilizado por navegadores que no muestran imágenes para brindar texto alternativo al visitante.</p>
+
+<h2 id="nueve" >9. &#60;div&#62;...&#60;/div&#62; Un contenedor de contenido a nivel de bloque</h2>
+
+<p>El elemento <b>div</b> es un contenedor genérico que puede usar para agregar más estructura al contenido de su página. Por ejemplo, puede agrupar varios párrafos o encabezados que tengan un propósito similar dentro de un elemento <b>div</b> .</p>
+
+<p>Normalmente, los elementos <b>div</b> se utilizan para cosas como:</p>
+
+<ul>
+    <li>Encabezados y pies de página.</li>
+    <li>Columnas de contenido y barras laterales.</li>
+    <li>Casillas resaltadas dentro del flujo de texto.</li>
+    <li>Áreas de la página con un propósito específico, como espacios publicitarios.</li>
+    <li>Galerías de imágenes</li>
+</ul>
+
+<p>
+Al agregar atributos de <b>class</b> y / o <b>id</b> a sus elementos <b>div</b>, puede usar CSS para diseñar y posicionar los <b>divs</b>. Esta es la base para crear diseños de página basados ​​en CSS.
+</p>
+<p>A continuación, se muestra un ejemplo que utiliza el elemento <b>div</b> para incluir el contenido de una barra lateral en la página:</p>
+
+<pre>
+    
+    &#60;div id="sidebar"&#62;
+        &#60;h1>Sidebar Heading&#60;/h1&#62;
+        &#60;p>Sidebar text&#60;/p&#62;
+        &#60;p>More sidebar text&#60;/p&#62;
+    &#60;/div&#62;<br>
+</pre>
+
+<h2 id="diez" >10. &#60;span&#62;...&#60;/span&#62;Un contenedor en línea para contenido</h2>
+
+<p>El elemento <b>span</b> es similar <b>div</b> en que se usa para agregar estructura a su contenido. La diferencia es que <b>div</b> es un elemento a nivel de bloque,
+     mientras que <b>span</b> un elemento en línea:
+</p>
+
+<p>Los elementos a nivel de bloque, como div, h1 y p, son elementos que están diseñados para contener bloques de contenido relativamente grandes o independientes,
+     como párrafos de texto. Un elemento a nivel de bloque siempre comienza en una nueva línea.</p>
+
+<p>Los elementos en línea , como <b>span</b>, <b>a</b> e <b>img</b>, están diseñados para contener piezas de contenido más pequeñas, como unas pocas palabras o una oración, dentro de un bloque de contenido más grande.
+     Agregar un elemento en línea no hace que se cree una nueva línea. Los elementos a nivel de bloque pueden contener elementos en línea, pero los elementos en línea no pueden contener elementos a nivel de bloque.
+    Al igual que con a <b>div</b>, a menudo agrega un <b>class</b> y / o <b>id</b> atributo a <b>span</b> para que pueda diseñarlo usando CSS.
+</p>
+
+<p>El siguiente ejemplo utiliza elementos <b>span</b> para indicar nombres de productos dentro de un párrafo. Estos nombres de productos podrían luego resaltarse usando CSS. 
+    Un motor de búsqueda personalizado también podría usar la información proporcionada por los elementos <b>span</b> para identificar los productos dentro de la página.
+</p>
+<pre><br>
+    &#60;p&#62;Some of our products include &#60;span class="product"&#62;SuperWidgets&#60;/span&#62;, &#60;span class="product"&#62;MegaWidgets&#60;/span&#62;, and &#60;span class="product"&#62;WonderWidgets&#60;/span&#62;.&#60;/p&#62;
+<br>
+</pre>
+
+<p>Exelente pagina para aprender a codear! <a href="https://www.w3schools.com/" target="blanck" style="font-size: large;font-family: monospace;">www.w3schools.com</a></p>
+
+</body>
+</html>
